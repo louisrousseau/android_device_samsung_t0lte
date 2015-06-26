@@ -36,6 +36,8 @@ TARGET_KERNEL_CONFIG := custom_t0ltecdma_defconfig
 else
 TARGET_KERNEL_CONFIG := custom_t0lte_defconfig
 endif
+# For bringup
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # GPS
 BOARD_GPS_SET_PRIVACY := true
@@ -44,26 +46,26 @@ BOARD_GPS_SET_PRIVACY := true
 RECOVERY_FSTAB_VERSION := 2
 
 # Selinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/t0lte/selinux
+#BOARD_SEPOLICY_DIRS += \
+#    device/samsung/t0lte/selinux
 
-BOARD_SEPOLICY_UNION += \
-    file_contexts \
-    te_macros \
-    device.te \
-    dhcp.te \
-    domain.te \
-    file.te \
-    init.te \
-    kickstart.te \
-    mediaserver.te \
-    netmgrd.te \
-    qmux.te \
-    rild.te \
-    secril.te \
-    system.te \
-    ueventd.te \
-    wpa_supplicant.te
+#BOARD_SEPOLICY_UNION += \
+#    file_contexts \
+#    te_macros \
+#    device.te \
+#    dhcp.te \
+#    domain.te \
+#    file.te \
+#    init.te \
+#    kickstart.te \
+#    mediaserver.te \
+#    netmgrd.te \
+#    qmux.te \
+#    rild.te \
+#    secril.te \
+#    system.te \
+#    ueventd.te \
+#    wpa_supplicant.te
 
 # TWRP
 DEVICE_RESOLUTION := 720x1280
