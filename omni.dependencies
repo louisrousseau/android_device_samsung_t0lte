@@ -12,7 +12,7 @@
     "revision":     "android-5.1"
   },
   {
-    "remote":       "omnirom",
+    "remote":       "louisrousseau",
     "repository":   "android_kernel_samsung_smdk4412",
     "target_path":  "kernel/samsung/smdk4412",
     "revision":     "android-5.1"
